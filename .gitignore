@@ -1,0 +1,54 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# SQLite Database files (keep schema reproducible, ignore actual user databases)
+*.db
+*.sqlite
+*.sqlite3
+data/*.db
+data/*.sqlite
+data/*.sqlite3
+!data/.gitkeep
+
+# Receipts and generated exports (ignore generated files with business data)
+receipts/**
+!receipts/.gitkeep
+exports/**
+!exports/.gitkeep
+*.log
+*.tmp
+*.temp
+
+# Environments & IDEs
+.env
+.env.*
+!.env.example
+.venv
+env/
+venv/
+ENV/
+.vscode/
+.idea/
+*.swp
+*.bak
+
+# Test and coverage output
+.pytest_cache/
+.coverage
+coverage.xml
+htmlcov/
+
+# Private credentials and certificates
+*.pem
+*.key
+*.p12
+*.pfx
+secrets.json
+secrets.yaml
+secrets.yml
+credentials.json
+
+# Local QA notes can contain machine paths and snapshots of inventory data
+QA_TEST_REPORT.md
